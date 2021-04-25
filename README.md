@@ -2,4 +2,4 @@
 
 Back-end server for facial-recognition-app
 
-<p> To run server: ``npm run start`` <p>
+<p> To run server: <p> ``npm run start``
