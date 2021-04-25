@@ -1,2 +1,5 @@
 # facial-recognition-app-server
-server for facial-recognition-app
+
+Back-end server for facial-recognition-app
+
+<p> To run server: `npm run start` <p>
