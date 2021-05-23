@@ -27,7 +27,7 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send(db.users);
+  res.send("app is working");
 });
 
 app.post("/signin", (req, res) => {
