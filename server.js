@@ -27,9 +27,9 @@ app.listen(3000, () => {
 });
 
 app.get("/", (req, res) => {
-  const users = await db.select("*").from("users");
-  res.send(users);
+  res.send(db.users);
 });
+
 app.post("/signin", (req, res) => {
   signin.handleSignin(req, res, db, bcrypt);
 });
