@@ -15,10 +15,8 @@ const image = require("./controllers/image");
 const db = require("knex")({
   client: "pg",
   connection: {
-    host: "127.0.0.1",
-    user: "postgres",
-    password: "",
-    database: "image-recognition",
+    host: process.env.POSTGRES_URL || "127.0.0.1",
+    ssl: true,
   },
 });
 
