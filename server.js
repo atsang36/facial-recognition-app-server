@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 const register = require("./controllers/register");
 const signin = require("./controllers/signin");
